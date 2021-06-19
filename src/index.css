@@ -9,16 +9,23 @@ display: flex;
 justify-content: space-around;
 color: #F98E1D;
 font-family: 'IBM Plex Sans', sans-serif;
+border-radius: 7px 7px 0px 0px;
+border: 1px solid #F98E1D;
 }
 
 .Header h3{
   text-align: center;
-  border: 3px solid rgb(245, 21, 21);
+  border: 1px solid #F98E1D;
   width: 50%;
 }
 
+.Header h3:hover{
+  cursor: pointer;
+}
+
 .Container{
-  background-color: white;
+  border: 2px solid #F98E1D;
+  border-radius: 10px;
   max-width: 600px;
   min-width: 500px;
   height: 100%;
@@ -28,9 +35,32 @@ font-family: 'IBM Plex Sans', sans-serif;
   background-color: #f7f4f2;
 }
 
+.SelectedTab{
+  background-color: #F98E1D;
+  color: white;
+}
+
+.UnSelectedTab{
+  background-color: #f7f4f2;
+  color: #F98E1D;
+}
+
 .App{
   /*background-color: #F98E1D;*/
   display: flex;
   justify-content: center;
+}
+
+Body button{
+  background-color: rgb(66, 192, 66);
+  color: white;
+  padding: 4px;
+  margin:10px;
+  border: rgb(66, 192, 66);
+  border-radius: 4px;
+}
+
+Body form input{
+  margin: 5px;
 }
 
